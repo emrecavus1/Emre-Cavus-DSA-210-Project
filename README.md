@@ -18,8 +18,8 @@ This repository contains my **Data Science and Analytics** project, which focuse
       -  The daily concentration levels will be based on the duration of two activities that I believe requires the most amounts of concentration and indicators of productivity: daily duration of studying and the amount of time I spend on doing sports. The duration of studying will not involve the lectures and recitations that I am attending as they are my responsibilities at some point, but any other type of studying activity will be included. This can be spending time with my friends for a certain project, or individual studies.
 
 3. **Plan**
-   - I will collect these data between the dates **9 March** and **18 April**, 2025.
-   - After 18 April, I will transition to the **data analysis phase**, which will involve **statistical interpretations** and **Machine Learning models** to uncover patterns and insights.  
+   - I will collect these data between the dates **9 March** and **25 April**, 2025.
+   - After 25 April, I will transition to the **data analysis phase**, which will involve **statistical interpretations** and **Machine Learning models** to uncover patterns and insights.  
    - 🔍 **Exploratory Data Analysis (EDA) 📊**  
       - **Data Cleaning & Preprocessing**: Handle missing values, remove inconsistencies, and normalize caffeine intake & sleep data.  
       - **Descriptive Statistics**: Calculate mean, median, standard deviation, and other key metrics for each variable.  
@@ -31,4 +31,21 @@ This repository contains my **Data Science and Analytics** project, which focuse
       - **Regression Models** (e.g., **Linear Regression, Random Forest Regressor**) to predict concentration levels based on caffeine & sleep data.
       - **Classification Models** (e.g., **Decision Trees, Logistic Regression**) to categorize days into "High Focus" vs. "Low Focus" based on caffeine and sleep habits.  
       - Evaluate model performance using **RMSE (Root Mean Square Error)** and **accuracy scores**.  
+
+4. **Exploratory Data Analysis** 
+   - **Data Preprocessing**
+      - Categorized the hours of sleep as **low vs high making** the threshold 6.5 hours
+      - Converted raw daily sleep into **Sleep Deficit** (ideal = 8 hours)
+      - Created a new variable: **Caffeine Intake (Yesterday)** to explore lagged effects
+      - Labeled categorical levels for caffeine yesterday and sleep deficit (Low / Medium / High)
+   - **Descriptive Statistics & Visualizations**
+      - **Histograms and boxplots** to explore distributions
+      - **Correlation heatmaps and scatter plots** to reveal linear trends
+      - **Regression** (linear & quadratic) models with **confidence intervals** for Sleep vs Productivity
+   - **Hypothesis Testing**
+      - Conducted a **two-sample t-test** comparing productivity across sleep level groups
+         - Used the preprocessed groups which are low and high sleep hours
+         - Using each group's corresponding productive hours, tested the relationship between hours of sleep and productivity
+      - Created a **contingency table** and used the **Chi-Square Test of Independence** to assess if:
+         - Yesterday's caffeine intake affects today's sleep deficit
 
