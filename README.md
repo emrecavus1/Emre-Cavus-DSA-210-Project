@@ -49,3 +49,48 @@ This repository contains my **Data Science and Analytics** project, which focuse
       - Created a **contingency table** and used the **Chi-Square Test of Independence** to assess if:
          - Yesterday's caffeine intake affects today's sleep deficit
 
+5. **Machine Learning and Model Evaluation**
+   - I implemented three regression models to predict daily study hours based on caffeine intake and sleep features:
+     - **Linear Regression**: Served as a baseline model.
+     - **Decision Tree Regressor**: Captured non-linear relationships.
+     - **Polynomial Regression (degree=2)**: Modeled curved patterns in the data.
+   - For each model, I evaluated performance using:
+     - **MAE (Mean Absolute Error)**
+     - **RMSE (Root Mean Square Error)**
+     - **5-Fold Cross-Validation** (this is for decision tree regressor)
+     - **R² Score** 
+   - A comparison table of model performance:
+     | Model                   | MAE     | RMSE    | R²     |
+     |------------------------|---------|---------|--------|
+     | Linear Regression      | 0.31     | 0.40     | 0.93    |
+     | Decision Tree Regressor| 0.28     | 0.55     | 0.87    |
+     | Polynomial Regression  | 0.63     | 0.82     | 0.70    |
+   - I also visualized:
+     - **Actual vs. Predicted plots** for each model
+     - **Feature importance** for the Decision Tree
+     - **Residual plots** to inspect model error behavior
+
+
+6. **Findings**
+   - There is a **significant correlation** between hours of sleep and study hours.
+   - **Caffeine intake the previous day** is independent from **sleep deficit**, as a conclusion of the Chi-Square test.
+   - **Linear regression** gave the best fit for predicting study hours, outperforming both polynomial regression and decision tree regressor models.
+
+
+
+7. **Limitations and Future Work**
+   - The dataset is **limited in size (about 6 weeks)** and reflects **a single individual's habits** — generalizability is limited.
+   - Some data points (like sleep quality) are **self-reported**, which may introduce bias.
+   - In future work, I plan to:
+     - **Expand the dataset** with additional participants
+     - Track more precise physiological data (e.g., heart rate, sleep tracking apps)
+     - Add **time-of-day** to the equation as well (morning coffee vs. evening coffee)
+
+
+
+
+
+
+
+
+
