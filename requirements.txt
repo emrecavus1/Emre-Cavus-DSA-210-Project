@@ -1,0 +1,42 @@
+# Python package dependencies for the DSA 210 Project
+
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+scikit-learn
+statsmodels
+
+# Below are the specific modules/methods imported
+# matplotlib
+Methods:
+	pyplot
+
+# numpy
+
+# pandas
+
+# scipy
+Methods:
+	stats
+		t
+
+# seaborn
+
+# sklearn
+Methods: 
+linear_model:
+
+	LinearRegression
+selection: 
+	cross_val_score
+	train_test_split
+preprocessing: 
+	PolynomialFeatures
+tree: 
+	DecisionTreeRegressor
+
+# statsmodels
+Methods: 
+	api
